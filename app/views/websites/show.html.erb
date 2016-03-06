@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @website.url %>
+</p>
+<%= image_tag @website.image.url %>
+<p>
+  <strong>Description:</strong>
+  <%= @website.description %>
+</p>
+
+<%= link_to 'Edit', edit_website_path(@website) %> |
+<%= link_to 'Back', websites_path %>
